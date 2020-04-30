@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  margin: 0 auto 0 auto;
+  /* top, right, bottom, left */
+  /* font-size: 562.5%; if we want dynamic 90px as percentage then (90/16) * 100 */
+  /* or */
+  /* 1em = 16px , 90/16=5.625 */
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', serif;
+  color: #11999E;
+}
+
+.top-container {
+  height: 500px;
+  /* set height of container, then position elements within */
+  background-color: #6a67eb;
+  position: relative;
+  /* positioning will be relative to the body */
+  padding-top: 100px;
+  /* see box model for location of padding */
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.aprogrammer{
+  position:absolute;
+  left: 475px;
+  top: 190px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 250px;
+  top: 50px;
+  /* note: this is placed inside the padding area */
+}
+
+.mountain {
+  position: absolute;
+  bottom: 0;
+  /*  the mountain sits on bottom border of container 1 */
+  left: 325px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 225px;
+  bottom: 300px;
+}
+
+hr {
+  /* 3 values: top,left&right,bottom of the border */
+  border-style: dotted none none;
+  /* color the dots */
+  border-color: black;
+  /* size of dots */
+  border-width: 5px;
+  /* length of the horizontal line of dots as % of displayed page */
+  width: 5%;
+  margin-top: 25px;
+}
+
+.middle-container {
+  padding-top: 25px;
+}
+
+.bottom-container {
+  margin-bottom: 25px;
+}
+
+.skill-row {
+  width: 50%;
+  /* take up only 50% of the line, element will shift left */
+  margin: 75px auto 25px auto;
+  text-align: left;
+  line-height: 2;
+  /* set line spacing */
+}
+
+.img-SAPBasis {
+  width: 25%;
+  /* 25% the size of the parent container */
+  float: left;
+  /* image shifts to the left of the container */
+  margin-right: 30px;
+  /* build a right margin on the image to push text away */
+}
+
+.img-alphafive {
+  width: 25%;
+  /* 25% the size of the parent container */
+  float: right;
+  /* image shifts to the right of the container */
+  margin-right: 0;
+  /* adjust margin if necessary */
+}
+
+/* note: image has to be large enough lenght wise so text will wrap around it */
+.img-google {
+  width: 25%;
+  /* 25% the size of the parent container */
+  float: left;
+  /* image shifts to the left of the container */
+  margin-right: 30px;
+  /* build a right margin to push text away */
+}
+
+.img-website {
+  width: 25%;
+  /* 25% the size of the parent container */
+  float: right;
+  /* image shifts to the right of the container */
+  margin-right: 30px;
+  /* build a right margin to push text away */
+}
+
+/* this code came from https://cssbuttoncreator.com/ */
+.myButton {
+  background-color: #66BFBF;
+  background-image: linear-gradient(to bottom, #66BFBF, #336161);
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: Open Sans;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 40px;
+  /* black */
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  /* white */
+  border: solid #FFFFFF 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* puesdo-state: hover */
+.myButton:hover {
+  /* color text black */
+  color: black;
+}
+
+.footer-link {
+  color: #6a67eb;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.75rem;
+}
